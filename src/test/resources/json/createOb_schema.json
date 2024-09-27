@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "year": {
+          "type": "integer"
+        },
+        "price": {
+          "type": "number"
+        },
+        "Cpu model": {
+          "type": "string"
+        },
+        "Hard disk size": {
+          "type": "string"
+        }
+      },
+      "required": ["year", "price", "Cpu model", "Hard disk size"]
+    }
+  },
+  "required": ["name", "data"]
+}
